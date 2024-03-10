@@ -6,7 +6,7 @@
     "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended", "plugin:tailwindcss/recommended", "prettier"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -15,8 +15,34 @@
     },
     "plugins": [
         "@typescript-eslint",
-        "react"
+        "react", "import", "sort-keys-fix", "typescript-sort-keys", "tailwindcss"
     ],
     "rules": {
+        "react/react-in-jsx-scope": "off",
+        "import/no-duplicates": "warn",
+        "import/order": [
+          "warn",
+          {
+            "groups": [
+              "builtin",
+              "external",
+              "internal",
+              "parent",
+              "sibling",
+              "index",
+              "object",
+              "type"
+            ]
+          }
+        ],
+        "react/jsx-sort-props": "warn",
+        "sort-keys-fix/sort-keys-fix": "warn",
+        "typescript-sort-keys/interface": "warn",
+        "typescript-sort-keys/string-enum": "warn"
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
     }
 }

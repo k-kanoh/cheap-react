@@ -44,8 +44,8 @@
     ],
     "react/jsx-sort-props": "warn",
     "sort-keys-fix/sort-keys-fix": "warn",
-    "typescript-sort-keys/interface": "warn",
-    "typescript-sort-keys/string-enum": "warn"
+    "typescript-sort-keys/interface": "off",
+    "typescript-sort-keys/string-enum": "off"
   },
   "settings": {
     "react": {
